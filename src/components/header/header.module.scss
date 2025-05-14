@@ -1,0 +1,37 @@
+.header {
+  background-color: #E60012;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; 
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cta {
+    background-color: rgb(114, 0, 0);
+    color: #000000;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #E60012;
+      color: #FFFFFF;
+    }
+
+    img {
+      display: block;
+    }
+  }
+}

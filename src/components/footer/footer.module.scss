@@ -1,0 +1,27 @@
+.footer {
+  background-color: #2E2E2E;
+  color: #FFFFFF;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #E60012;
+
+  .links {
+    margin-bottom: 1rem;
+
+    a {
+      color: #CDA434;
+      margin: 0 1rem;
+      font-weight: 500;
+
+      &:hover {
+        color: #E60012;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    color: #CCCCCC;
+  }
+}

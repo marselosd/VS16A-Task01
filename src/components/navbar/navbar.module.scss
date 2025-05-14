@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #700009;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #CDA434;
+    }
+  }
+  
+  .menuButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+  }
+
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+
+    .menuButton {
+      display: block;
+    }
+  }
+}
