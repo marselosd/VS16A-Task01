@@ -30,7 +30,7 @@ export default function Party() {
         <hr/>
         <h3>Curiosidade</h3>
         <ul>
-            <li>Arsène e Raoul vem dos nomes de Arsène "Raoul" Lupin, combinando com a ideia dos Ladrões de Corações</li>
+            <li>Arsène e Raoul vem dos nomes de Arsène Raoul Lupin, combinando com a ideia dos Ladrões de Corações</li>
             <li>Na mesma temática, durante o jogo você vive no sotão do Leblanc Café, homenageando Maurice Leblanc, criador de Lupin</li>
         </ul>
     </div>
@@ -44,7 +44,7 @@ export default function Party() {
         width={200}
         height={200}
         />
-        <p>O guia fiel e mascote dos Phantom Thieves. Um misterioso "gato" com habilidades únicas. Ele possui a Arcana Magician</p>
+        <p>O guia fiel e mascote dos Phantom Thieves. Um misterioso gato com habilidades únicas. Ele possui a Arcana Magician</p>
         <hr/>
         <h3>Personas</h3>
         <ul>
