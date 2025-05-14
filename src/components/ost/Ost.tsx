@@ -26,12 +26,12 @@ export default function Ost() {
 
         <h2>Músicas populares:</h2>
         <ul>
-            <li>"Life Will Change" – Música agitada para o caminho contra os bosses do jogo.</li>
-            <li>"Beneath the Mask" – A música relaxante do jogo, toca dentro da cafeteria/casa</li>
-            <li>"Last Surprise" – Tema principal de combate.</li>
-            <li>"The Whims of Fate" – Música da dungeon do Cassino do jogo.</li>
-            <li>"Wake Up, Get Up, Get Out There" – Música vibrante de abertura do jogo.</li>
-            <li>"Rivers in the Desert" – Tema épico de combate final.</li>
+            <li>Life Will Change – Música agitada para o caminho contra os bosses do jogo.</li>
+            <li>Beneath the Mask – A música relaxante do jogo, toca dentro da cafeteria/casa</li>
+            <li>Last Surprise – Tema principal de combate.</li>
+            <li>The Whims of Fate – Música da dungeon do Cassino do jogo.</li>
+            <li>Wake Up, Get Up, Get Out There – Música vibrante de abertura do jogo.</li>
+            <li>Rivers in the Desert – Tema épico de combate final.</li>
         </ul>
 
         <hr/>
