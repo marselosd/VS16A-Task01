@@ -2,12 +2,13 @@ import React from "react";
 import styles from './ost.module.scss';
 import Image from 'next/image';
 import Link from "next/link";
+import LinkPropCtx from "../linkPropCtx/LinkPropCtx";
 
 export default function Ost() {
   return (
     <>
     <div className={styles.ost}>
-        <h1>OST (Trilha Sonora)</h1>
+        <h1 className={`font-persona`}>TRILHA SONORA</h1>
 
         <Image
           src="/img/outros/p5ost.png"
@@ -37,12 +38,12 @@ export default function Ost() {
         <hr/>
 
         <h2>Links</h2>
-        <Link href="https://open.spotify.com/intl-pt/track/0LNyWv4RYKbaXIvzk6nMxZ?si=50d5246c1b25408b" target="_blank" className={styles.cta}>Life Will Change</Link>
-        <Link href="https://open.spotify.com/intl-pt/track/5XLXrm5JVMdOus1fWmTOFw?si=1591b989aad34dc9" target="_blank" className={styles.cta}>Beneath the Mask</Link>
-        <Link href="https://open.spotify.com/intl-pt/track/4cPnNnTMkJ6soUOUzEtmcp?si=b68c3964a6e443c6" target="_blank" className={styles.cta}>Last Surprise</Link>
-        <Link href="https://open.spotify.com/intl-pt/track/73DCreJgfFdFxVnjsMSeo4?si=aa08fe0313314009" target="_blank" className={styles.cta}>The Whims of Fate</Link>
-        <Link href="https://open.spotify.com/intl-pt/track/4AuZBIN4aeFL9egQldQfRn?si=6e26153c2302408d" target="_blank" className={styles.cta}>Wake Up, Get Up, Get Out There</Link>
-        <Link href="https://open.spotify.com/intl-pt/track/6rgIKCKKCnhyaNTgmY73tq?si=1e253ccf3c7b4661" target="_blank" className={styles.cta}>Rivers in the Desert</Link>
+        <LinkPropCtx href="https://open.spotify.com/intl-pt/track/0LNyWv4RYKbaXIvzk6nMxZ?si=50d5246c1b25408b" content="Life Will Change" target="_blank" className={styles.cta}/>
+        <LinkPropCtx href="https://open.spotify.com/intl-pt/track/5XLXrm5JVMdOus1fWmTOFw?si=1591b989aad34dc9" content="Beneath the Mask" target="_blank" className={styles.cta}/>
+        <LinkPropCtx href="https://open.spotify.com/intl-pt/track/4cPnNnTMkJ6soUOUzEtmcp?si=b68c3964a6e443c6" content="Last Surprise" target="_blank" className={styles.cta}/>
+        <LinkPropCtx href="https://open.spotify.com/intl-pt/track/73DCreJgfFdFxVnjsMSeo4?si=aa08fe0313314009" content="The Whims of Fate" target="_blank" className={styles.cta}/>
+        <LinkPropCtx href="https://open.spotify.com/intl-pt/track/4AuZBIN4aeFL9egQldQfRn?si=6e26153c2302408d" content="Wake Up, Get Up, Get Out There" target="_blank" className={styles.cta}/>
+        <LinkPropCtx href="https://open.spotify.com/intl-pt/track/6rgIKCKKCnhyaNTgmY73tq?si=1e253ccf3c7b4661" content="Rivers in the Desert" target="_blank" className={styles.cta}/>
     </div>
     </>
   );

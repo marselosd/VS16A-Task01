@@ -7,7 +7,7 @@ export default function Party() {
     <>
 
     <div className={styles.party}>
-        <h1>Membro do Esquadrão</h1>
+        <h1 className={`font-persona`}>MEMBRO</h1>
         <h2>Joker (Ren Amamiya)</h2>
         <Image
         src="/img/personagens/joker.png"
@@ -36,7 +36,7 @@ export default function Party() {
     </div>
 
     <div className={styles.party}>
-        <h1>Membro do Esquadrão</h1>
+        <h1 className={`font-persona`}>MEMBRO</h1>
         <h2>Morgana</h2>
         <Image
         src="/img/personagens/morgana.png"
@@ -62,7 +62,7 @@ export default function Party() {
 
 
     <div className={styles.party}>
-        <h1>Membro do Esquadrão</h1>
+        <h1 className={`font-persona`}>MEMBRO</h1>
         <div>
             <h2>Mais em breve... </h2>
         </div>

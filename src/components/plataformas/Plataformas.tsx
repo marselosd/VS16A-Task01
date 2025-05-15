@@ -6,7 +6,7 @@ export default function Plataformas() {
   return (
     <>
     <div className={styles.plataformas}>
-        <h1>Plataformas</h1>
+        <h1 className={`font-persona`}>PLATAFORMAS</h1>
         <p>
         Persona 5 foi lançado originalmente para <strong>PlayStation 3</strong> e <strong>PlayStation 4</strong> em 2016, sendo um exclusivo dos consoles da Sony na época. 
         O jogo chamou atenção por sua estética marcante, narrativa envolvente e jogabilidade estratégica baseada em turnos.

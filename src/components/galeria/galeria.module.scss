@@ -1,0 +1,58 @@
+.galeriaDiv {
+    padding: 1.5rem;
+    background-color: #2E2E2E;
+    border-left: 4px solid #E60012;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    margin: 1.5rem 1rem;
+    max-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+    h1 {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #CDA434;
+    }
+
+    .wrapperintern {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .intern {
+        background-color: #2E2E2E;
+        border-radius: 0.2rem;
+        color: #FFFFFF;
+        margin: 0.5rem;
+        padding: 1rem;
+        flex: 1 1 100%;
+        max-width: 100%; 
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+        margin-bottom: 0.8rem;
+        }
+        
+        img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.3rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .intern {
+            flex: 1 1 45%; 
+            max-width: 45%;
+        }
+    }
+}

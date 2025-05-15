@@ -7,15 +7,15 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-    <header className={styles.header}>
+    <header className={`${styles.header} font-persona`}>
 
-      <h1>Task01 - Persona 5</h1>
+      <h1>TASK01-PERSONA5</h1>
 
       <Image
-        src="/img/outros/persona5-logo.png"
+        src="/img/outros/P5R-logo.webp"
         alt="Logo do Jogo"
         width={100}
-        height={75}
+        height={100}
         className={styles.logo}
       />
 

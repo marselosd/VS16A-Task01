@@ -6,7 +6,7 @@ export default function SobreOJogo() {
   return (
     <>
     <div className={styles.sobre}>
-        <h1>Sobre o Jogo</h1>
+        <h1 className={`font-persona`}>SOBRE O JOGO</h1>
         <p>
         Persona 5 é um RPG japonês aclamado pela crítica, desenvolvido pela Atlus. 
         Lançado originalmente em 2016, o jogo acompanha um grupo de estudantes do ensino médio 

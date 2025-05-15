@@ -1,42 +1,42 @@
 .party {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #2E2E2E;
-  border-left: 5px solid #E60012;
+  border-left: 4px solid #E60012;
   border-radius: 0.5rem;
   color: #FFFFFF;
-  max-width: 800px;
-  margin: 2rem auto;
+  margin: 1.5rem 1rem;
+  max-width: 100%;
 
   h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
     color: #CDA434;
     text-align: center;
   }
 
   h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
     color: #ffffff;
   }
 
   h3 {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #ffffff;
   }
 
   p {
-    line-height: 1.7;
-    font-size: 1.05rem;
+    line-height: 1.6;
+    font-size: 1rem;
     color: #f0f0f0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
   }
 
   hr {
     border: 0;
     border-top: 2px solid #E60012;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
   }
 
   ul {
@@ -44,7 +44,7 @@
     padding-left: 0;
 
     li {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #f0f0f0;
       margin-bottom: 0.5rem;
 
@@ -52,6 +52,37 @@
         content: "• ";
         color: #CDA434;
       }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-left: 5px solid #E60012;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul li {
+      font-size: 1.1rem;
     }
   }
 }

@@ -1,14 +1,16 @@
 import React from "react";
 import styles from "./navbar.module.scss";
-import Link from "next/link";
+import LinkPropCtx from "../linkPropCtx/LinkPropCtx";
 
 export default function NavBar() {
   return (
     <>
     <nav className={styles.navbar}>
-        <Link href='/home' className={styles.navLinks}>Home</Link>
-        <Link href='/menu1' className={styles.navLinks}>Menu - Party</Link>
-        <Link href='/menu2' className={styles.navLinks}>Menu - OST</Link>
+        <LinkPropCtx href="/home" content="Home" className={styles.navLinks}/>
+        <LinkPropCtx href="/menu1" content="Party" className={styles.navLinks}/>
+        <LinkPropCtx href="/menu2" content="OST" className={styles.navLinks}/>
+        <LinkPropCtx href="/galeria" content="Galeria" className={styles.navLinks}/>
+        <LinkPropCtx href="/contato" content="Contato" className={styles.navLinks}/>
     </nav>
     </>
   );
