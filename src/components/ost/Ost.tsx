@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './ost.module.scss';
 import Image from 'next/image';
-import Link from "next/link";
 import LinkPropCtx from "../linkPropCtx/LinkPropCtx";
 
 export default function Ost() {
