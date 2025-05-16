@@ -1,7 +1,7 @@
 .personaApi {
   padding: 1.5rem;
   background-color: #2E2E2E;
-  border-left: 4px solid #E60012;
+  border-left: 4px solid #3d00e6;
   border-radius: 0.5rem;
   color: #FFFFFF;
   margin: 1.5rem 1rem;
@@ -44,7 +44,7 @@
 
   hr {
     border: 0;
-    border-top: 2px solid #E60012;
+    border-top: 2px solid #3d00e6;
     margin: 1.5rem 0;
   }
 
@@ -64,29 +64,17 @@
     }
   }
 
-  .cta {
-    background-color: #CDA434;
-    color: #000000;
-    padding: 0.6rem 1.2rem;
-    display: flex;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    justify-content: center;
-    width: fit-content;
-    margin: 1.5rem auto;
-
-    &:hover {
-      background-color: #E60012;
-      color: #FFFFFF;
-    }
+  .personaImage {
+    width: 150px; 
+    height: auto; 
+    border-radius: 8px; 
   }
 
   @media (min-width: 1024px) {
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
-    border-left: 5px solid #E60012;
+    border-left: 5px solid #3d00e6;
 
     h1 {
       font-size: 2rem;
@@ -111,5 +99,13 @@
     ul li {
       font-size: 1.1rem;
     }
+
+    .personaImage {
+      width: 300px; 
+      height: auto;  
+      border-radius: 8px; 
+    }
   }
 }
+
+

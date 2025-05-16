@@ -1,5 +1,5 @@
 'use client';
-import useFetch from "@/app/hooks/getApi";
+import useFetch from "@/app/hooks/useApi";
 import styles from "./personaApi.module.scss";
 
 const API_URL = `https://persona-compendium.onrender.com/personas/arsene`;
@@ -24,8 +24,12 @@ export interface PersonaData {
     nullifies: string[]
 }
 
-const PersonaApi = () => {
-  const { data, isLoading, error } = useFetch<PersonaData>(API_URL);
+interface PersonaApiProps {
+  name: string;
+}
+
+const PersonaApi = ({ name }: PersonaApiProps) => {
+  const { data, isLoading, error } = useFetch<PersonaData>(`/api/personas/${name}`);
 
   if (isLoading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error.message}</p>;
@@ -37,7 +41,7 @@ const PersonaApi = () => {
         <div className={styles.personaApi}>
             <h1>{data.name}</h1>
             <h2>{data.arcana}</h2>
-            <img src={data.image} alt="Imagem do Persona"/>
+            <img src={data.image} alt="Imagem do Persona" className={styles.personaImage}/>
             <p>{data.description}</p>
             <hr/>
             <h3>Status:</h3>
@@ -52,23 +56,23 @@ const PersonaApi = () => {
             <h3>Fraquezas:</h3>
             <ul>
                 {data.weak?.map(weakness => (
-                    <li key={weakness}></li>
+                    <li key={weakness}>{weakness}</li>
                 ))}
             </ul>
             <hr/>
             <h3>Resistencias:</h3>
             <ul>
                 {data.resists?.map(resistTo => (
-                    <li key={resistTo}></li>
+                    <li key={resistTo}>{resistTo}</li>
                 ))}
                 {data.reflects?.map(reflectsFrom => (
-                    <li key={reflectsFrom}></li>
+                    <li key={reflectsFrom}>{reflectsFrom}</li>
                 ))}
                 {data.absorbs?.map(absorbsFrom => (
-                    <li key={absorbsFrom}></li>
+                    <li key={absorbsFrom}>{absorbsFrom}</li>
                 ))}
                 {data.nullifies?.map(nullifiesFrom => (
-                    <li key={nullifiesFrom}></li>
+                    <li key={nullifiesFrom}>{nullifiesFrom}</li>
                 ))}
             </ul>
         </div>
