@@ -2,7 +2,7 @@
 import useFetch from "@/app/hooks/getApi";
 import styles from "./personaApi.module.scss";
 
-const API_URL = `https://persona-compendium.onrender.com/personas/`;
+const API_URL = `https://persona-compendium.onrender.com/personas/arsene`;
 // https://github.com/luyluish/persona-compendium
 // Agradecimento especial ao repositorio acima
 
