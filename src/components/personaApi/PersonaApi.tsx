@@ -24,12 +24,6 @@ export interface PersonaData {
     nullifies: string[]
 }
 
-interface UsePersonaApiState {
-    data: PersonaData | null;
-    isLoading: boolean;
-    error: Error | null;
-}
-
 const PersonaApi = () => {
   const { data, isLoading, error } = useFetch<PersonaData>(API_URL);
 
