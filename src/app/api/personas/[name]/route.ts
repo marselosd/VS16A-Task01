@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
-  const url = new URL(request.url);
-  const segments = url.pathname.split('/'); // ['', 'api', 'personas', 'arsene']
-
-  const name = segments[3]; // índice 3
+  const { pathname } = new URL(request.url);
+  const name = pathname.split("/").pop();
 
   if (!name) {
     return NextResponse.json({ error: 'Parâmetro "name" ausente' }, { status: 400 });
