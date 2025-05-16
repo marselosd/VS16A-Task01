@@ -11,6 +11,7 @@ export default function NavBar() {
         <LinkPropCtx href="/menu2" content="OST" className={styles.navLinks}/>
         <LinkPropCtx href="/galeria" content="Galeria" className={styles.navLinks}/>
         <LinkPropCtx href="/contato" content="Contato" className={styles.navLinks}/>
+        <LinkPropCtx href="/compedium" content="Compedium" className={styles.navLinks}/>
     </nav>
     </>
   );
