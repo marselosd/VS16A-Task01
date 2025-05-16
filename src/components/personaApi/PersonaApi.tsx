@@ -30,10 +30,6 @@ interface UsePersonaApiState {
     error: Error | null;
 }
 
-interface UseCatApiReturn extends UsePersonaApiState {
-    fetchPersonaData: () => Promise<void>;
-}
-
 const PersonaApi = () => {
   const { data, isLoading, error } = useFetch<PersonaData>(API_URL);
 
