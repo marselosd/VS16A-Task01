@@ -8,7 +8,7 @@ interface ButtonCallApiProps {
 export default function ButtonCallApi({ onClick }: ButtonCallApiProps) {
   return (
     <div className={styles.buttonCallApi}>
-      <h1>Bem-vindo à Velvet Room.</h1>
+      <h1 className={`font-persona`}>BEM VINDO, A VELVET ROOM!</h1>
       <h2>Aperte o botão para pesquisar um Persona no Compendium</h2>
       <p>
         A resposta da API pode variar de acordo com o Render.

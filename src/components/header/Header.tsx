@@ -3,6 +3,11 @@ import Image from 'next/image';
 import styles from "./header.module.scss";
 import NavBar from "../navbar/NavBar";
 import Link from "next/link";
+import GoogleLogin from "react-google-login";
+{/*
+import responseGoogle from "@/app/hooks/useResponseGoogle";
+import GoogleProp from "@/app/hooks/useResponseGoogle";
+*/}
 
 export default function Header() {
   return (
@@ -26,7 +31,18 @@ export default function Header() {
         width={50}
         height={50}/>
       </Link>
+      {/*
+      <GoogleLogin 
+      clientId={"918306502976-pp4emgrb1is59mvlhl9ml77trs46j5j1.apps.googleusercontent.com"}
+      buttonText="Continuar com Google"
+      onSuccess={responseGoogle}
+      />
 
+      {/*eslint-disable-next-line @next/next/no-img-element*/}
+      {/*<img src={profilePic} alt="Profile"/>
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
+      */}
     </header>
     <NavBar/>
     </>
